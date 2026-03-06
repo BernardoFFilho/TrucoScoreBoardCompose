@@ -86,7 +86,7 @@ fun TrucoScoreBoardApp() {
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
             TeamPanel(
-                teamName = "Equipe A",
+                teamName = "Nós",
                 score = scoreA,
                 enabled = !gameOver,
                 onAddOne = { addPoints(teamA = true, points = 1) },
@@ -96,7 +96,7 @@ fun TrucoScoreBoardApp() {
             VerticalDivider(modifier = Modifier.height(200.dp))
 
             TeamPanel(
-                teamName = "Equipe B",
+                teamName = "Eles",
                 score = scoreB,
                 enabled = !gameOver,
                 onAddOne = { addPoints(teamA = false, points = 1) },
