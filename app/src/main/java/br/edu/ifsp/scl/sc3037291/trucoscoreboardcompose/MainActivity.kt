@@ -36,10 +36,10 @@ fun TrucoScoreBoardApp() {
         else scoreB = minOf(scoreB + points, 12)
 
         when {
-            scoreA >= 12 -> { dialogMessage = "Equipe A venceu a partida!"; gameOver = true }
-            scoreB >= 12 -> { dialogMessage = "Equipe B venceu a partida!"; gameOver = true }
-            scoreA == 11 -> dialogMessage = "Equipe A está na mão de 11!"
-            scoreB == 11 -> dialogMessage = "Equipe B está na mão de 11!"
+            scoreA >= 12 -> { dialogMessage = "Nós vencemos a partida!"; gameOver = true }
+            scoreB >= 12 -> { dialogMessage = "Eles venceram a partida..."; gameOver = true }
+            scoreA == 11 -> dialogMessage = "Nós estamos na mão de 11!"
+            scoreB == 11 -> dialogMessage = "Eles estão na mão de 11..."
         }
     }
 
